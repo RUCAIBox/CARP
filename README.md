@@ -8,7 +8,7 @@ Our annotated EFG explicitly depicts the step-by-step reasoning process of a mat
 ![carp_desc](images/carp_desc.png)
 ![carp_case](images/carp_case.png)
 
-The CARP dataset and other datasets evaluated in the paper are stored in [`data`](https://github.com/ToheartZhang/CARP/blob/main/data) directory. 
+The CARP dataset and other datasets evaluated in the paper are stored in [`data`](https://github.com/RUCAIBox/CARP/blob/main/data) directory. 
 
 ## Two-Stage Deliberation
 The code will be released as soon as possible.
