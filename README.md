@@ -1,5 +1,5 @@
 # CARP
-This repo provides the CARP dataset and the source code of our paper: `Evaluating and Improving Tool-Augmented Computation-Intensive Math Reasoning`.
+This repo provides the CARP dataset and the source code of our paper: [Evaluating and Improving Tool-Augmented Computation-Intensive Math Reasoning](https://arxiv.org/abs/2306.02408).
 
 ## The CARP Dataset
 The **CARP** dataset consists of 4,886 middle school computation-intensive algebra problems, and each problem is associated with a natural language solution and an annotated EFG.
