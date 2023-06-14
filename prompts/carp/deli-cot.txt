@@ -1,0 +1,92 @@
+问题:
+若 $3 a ^ { m + 2 } b$ 与 $\frac { 1 } { 2 } ab ^ { n - 1 }$ 是同类项 , 则 $m + n$ 等于
+
+已有解题过程:
+\because $3 a ^ { m + 2 } b$ 与 $\frac { 1 } { 2 } ab ^ { n - 1 }$ 是同类项 , \therefore $m + 2 = 1$ , $n - 1 = 1$ , \therefore $m = -1$ , $n = 2$ , \therefore $m + n = 1 + 2 = 3$ 。 答案是：3
+
+检验:
+Action: think("$3 a ^ { m + 2 } b$ 与 $\frac { 1 } { 2 } ab ^ { n - 1 }$ 是同类项 , 则两个单项式指数部分相同")
+Output: 可得 $m + 2 = 1$, $n - 1 = 1$
+Action: solve_eq("m + 2 = 1")
+Output: ['m = - 1']
+Action: solve_eq("n - 1 = 1")
+Output: ['n = 2']
+Action: substitute("m + n", ["m = - 1", "n = 2"])
+Output: 1
+Final Answer: 1
+
+正确解题过程:
+//
+\because $3 a ^ { m + 2 } b$ 与 $\frac { 1 } { 2 } ab ^ { n - 1 }$ 是同类项 , \therefore $m + 2 = 1$ , $n - 1 = 1$ , \therefore $m = -1$ , $n = 2$ , \therefore $m + n = 1$ 。 答案是：1
+===
+问题:
+方程 $y - \frac { y - 1 } { 2 } = - \frac { y + 2 } { 5 }$ 的解是 ____ ?
+
+已有解题过程:
+将等式两边的分数化为通分后合并同类项得到：$\frac{3y}{10} - \frac{1}{2} = -\frac{y+2}{5}$，移项得到：$\frac{y}{2} = -\frac{9}{10}$，解得 $y = -\frac{9}{5}$。 答案是：y = -\frac{9}{5}。
+
+检验:
+Action: solve_eq("y - \frac { y - 1 } { 2 } = - \frac { y + 2 } { 5 }")
+Output: ["y = - \frac { 9 } { 7 }"]
+Final Answer: - \frac { 9 } { 7 }
+
+正确解题过程:
+//
+解方程 $y - \frac { y - 1 } { 2 } = - \frac { y + 2 } { 5 }$ , 得 $y = - \frac { 9 } { 7 }$ 。 答案是：- \frac { 9 } { 7 }
+===
+问题:
+若 $( m + 4 ) ^ { 2 } + | n - 3 | = 0$ , 则 $\frac { 1 } { 2 } m - n =$ ____ ?
+
+已有解题过程:
+由题意得：$(m+4)^2 + |n-3| = 0$，因为平方和不可能为负数，所以 $|n-3| = 0$，解得 $n = 3$。代入原式得 $(m+4)^2 = 0$，解得 $m = -4$。所以 $\frac{1}{2}m - n = \frac{1}{2}(-4) - 3 = -5$。 答案是：-5。
+
+检验:
+Action: solve_eq("|n-3|=0")
+Output: ["n = 3"]
+Action: solve_eq("(m+4)^2 = 0")
+Output: ["m = - 4"]
+Action: substitute("\frac{1}{2}m - n", ["n = 3", "m = - 4"])
+Output: - 5
+Final Answer: - 5
+
+正确解题过程:
+//
+由题意得：$(m+4)^2 + |n-3| = 0$，因为平方和不可能为负数，所以 $|n-3| = 0$，解得 $n = 3$。代入原式得 $(m+4)^2 = 0$，解得 $m = -4$。所以 $\frac{1}{2}m - n = \frac{1}{2}(-4) - 3 = -5$。 答案是：-5。
+===
+问题:
+已知关于 $x$ 的一元二次方程 $x ^ { 2 } + x + m = 0$ 的一个根是 $x = 1$ , 那么这个方程的另一个根是 ____ ?
+
+已有解题过程:
+根据一元二次方程求根公式 : $x = \frac { - b \pm \sqrt { b ^ { 2 } - 4 a c } } { 2 a }$ , 可得另一个根为 $x = - 1 - m$ 。由已知 $x = 1$ 是方程的一个根，代入得 $1 ^ { 2 } + 1 + m = 0$ , 解得 $m = - 2$ 。另一个根为 $x = - 1 - m = - 1 + 2 = 1$ 。 答案是：1
+
+检验:
+Action: substitute("x ^ { 2 } + x + m = 0", ["x = 1"])
+Output: 2 + m = 0
+Action: solve_eq("2 + m = 0")
+Output: ["m = - 2"]
+Action: substitute("x ^ { 2 } + x + m = 0", ["m = - 2"])
+Output: x ^ { 2 } + x - 2 = 0
+Action: solve_eq("x ^ { 2 } + x - 2 = 0")
+Output: ["x = 1", "x = - 2"]
+Final Answer: - 2
+
+正确解题过程:
+//
+将 $x = 1$ 代入 $x ^ { 2 } + x + m = 0$ 得 $2 + m = 0$ , 解得 $m = - 2$ , 代入 $x ^ { 2 } + x + m = 0$ 得 $x ^ { 2 } + x - 2 = 0$ , 解得 $x = 1$ 和 $x = - 2$ , 因此另一个根是 $x = - 2$ 。 答案是：- 2
+===
+问题:
+如果 线段 $a$ , $b$ 满足 $\frac { a } { b } = \frac { 5 } { 2 }$ , 那么 $\frac { a - b } { b }$ 的 值 等于 [blk]
+
+已有解题过程:
+\because $\frac { a } { b } = \frac { 5 } { 2 }$ , \therefore 可 设 $a = 5 k$ , 则 $b = 2 k$ , \therefore $\frac { a - b } { b } = - \frac { 3 } { 2 }$ 。 答案是：- \frac { 3 } { 2 }
+
+检验:
+Action: partial_solve("\frac { a } { b } = \frac { 5 } { 2 }", "a")
+Output: a = \frac { 5 } { 2 } b
+Action: substitute("\frac { a - b } { b }", ["a = \frac { 5 } { 2 } b"])
+Output: \frac { 3 } { 2 }
+Final Answer: \frac { 3 } { 2 }
+
+正确解题过程:
+//
+由 $\frac { a } { b } = \frac { 5 } { 2 }$ 得 $a = \frac { 5 } { 2 } b$ 。 将 $a = \frac { 5 } { 2 } b$ 代入 $\frac { a - b } { b } = \frac { 3 } { 2 }$ 。 答案是：\frac { 3 } { 2 }

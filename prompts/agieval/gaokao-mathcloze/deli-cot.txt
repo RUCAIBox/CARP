@@ -1,0 +1,83 @@
+问题:
+若 $\left(x+\frac{1}{x}\right)^{n}$ 的展开式中第 3 项与第 7 项的二项式系数相等, 则该展 开式中 $\frac{1}{x^{2}}$ 的系数为 $(\quad)$.
+
+已有解题过程:
+根据二项式定理，$\left(x+\frac{1}{x}\right)^{n}$ 的展开式中，$\frac{1}{x^2}$ 的系数为$\binom{n}{k}x^{n-2k}$，其中$k$为展开式中$x$的指数。因为第3项和第7项的二项式系数相等，所以展开式中$x$的指数为2或3。当$x$的指数为2时，$\frac{1}{x^2}$的系数为$\binom{n}{2}$；当$x$的指数为3时，$\frac{1}{x^2}$的系数为$\binom{n}{3}$。因为这两个二项式系数相等，所以$\binom{n}{2}=\binom{n}{3}$，解得$n=3$。因此，展开式为$(x+\frac{1}{x})^3=x^3+3x+\frac{3}{x}+\frac{1}{x^3}$，$\frac{1}{x^2}$的系数为$\binom{3}{2}=3$。答案是：3。
+
+检验:
+Action: think("$\dbinom{2}{n}=\dbinom{6}^{n}$")
+Output: n=8
+Action: think("展开式的通项")
+Output: T_{r+1}=\dbinom{r}{8} x^{8-r}\left(\frac{1}{x}\right)^r=\dbinom{r}{8} x^{8-2 r}
+Action: think("令 $8-2 r=-2$")
+Output: 8-2 r=-2
+Action: solve_eq("8-2 r=-2")
+Output: ["r = 5"]
+Action: substitute("\dbinom{8}{r}", ["r=5"])
+Output: 56
+Final Answer: 56
+
+正确解题过程:
+//
+由题意可得, $\dbinom{2}{n}=\dbinom{6}^{n}$，$\therefore n=8$，展开式的通项 T_{r+1}=C_8^r x^{8-r}\left(\frac{1}{x}\right)^r=C_8^r x^{8-2 r}$，令 $8-2 r=-2$ 可得 $r=5$，此时系数为 $\dbinom{8}{r}=56$。答案是: 56
+===
+问题:
+函数 $\mathrm{f}(\mathrm{x})=\sin (\mathrm{x}+2 \phi)-2 \sin \phi \cos (\mathrm{x}+\phi)$ 的最大值为 $(\quad)$.
+
+已有解题过程:
+函数 $f(x)=\sin (x+2 \phi)-2 \sin \phi \cos (x+\phi)=\sin [(x+\phi)+\phi]-$ $2 \sin \phi \cos (x+\phi)=\sin (x+\phi) \cos \phi+\cos (x+\phi) \sin \phi-2 \sin \phi \cos (x+\phi)=\sin (x+\phi) \cos \phi-\cos$ $(x+\phi) \sin \phi$ $=\sin [(x+\phi)-\phi]=\sin x。故函数 $f(x)$ 的最大值为 1 , 答案是：1。
+
+检验:
+Action: calculate("\sin (\mathrm{x}+2 \phi)-2 \sin \phi \cos (\mathrm{x}+\phi)")
+Output: \sin {( x )}
+Action: think("\sin {( x )} 的最大值")
+Output: 1
+Final Answer: 1
+
+正确解题过程:
+//
+化简得 $\sin (\mathrm{x}+2 \phi)-2 \sin \phi \cos (\mathrm{x}+\phi)=\sin {( x )}$。因为 \sin {( x )} 的最大值是 1，所以原式最大值为 1。答案是：1
+===
+问题:
+已知向量 $\vec{a}=(3,1), \vec{b}=(1,0), \vec{c}=\vec{a}+k \vec{b}$. 若 $\vec{a} \perp \vec{c}$, 则 $k=(\quad)$.
+
+已有解题过程:
+由向量的内积公式可得：$\vec{a} \cdot \vec{c} = |\vec{a}| \cdot |\vec{c}| \cdot \cos \theta$，其中 $\theta$ 是 $\vec{a}$ 和 $\vec{c}$ 的夹角。因为 $\vec{a} \perp \vec{c}$，所以 $\cos \theta = 0$，即 $\vec{a} \cdot \vec{c} = 0$。代入 $\vec{c}=\vec{a}+k \vec{b}$，得到 $(3,1) \cdot (3+k,1) = 0$，解得 $k=-\frac{10}{3}$。因此，答案是 $-\frac{10}{3}$。 答案是：$-\frac{10}{3}$
+
+检验:
+Action: think("$\because \vec{a}=(3,1), \vec{b}=(1,0)")
+Output: \vec{c}=\vec{a}+k \vec{b}=(3+k, 1)
+Action: think("\vec{a} \perp \vec{c}")
+Output: \vec{a} \square \vec{c}=3(3+k)+1 \times 1=0
+Action: solve_eq("3(3+k)+1 \times 1=0")
+Output: ["k = - \frac { 10 } { 3 }"]
+Final Answer: k=-\frac{10}{3}
+
+正确解题过程:
+//
+$\because \vec{a}=(3,1), \vec{b}=(1,0), \therefore \vec{c}=\vec{a}+k \vec{b}=(3+k, 1)$ ，$\because \vec{a} \perp \vec{c}, \therefore \vec{a} \square \vec{c}=3(3+k)+1 \times 1=0$, 解得 $k=-\frac{10}{3}$。答案是：$-\frac{10}{3}$
+===
+问题:
+设向量 $\vec{a}, \vec{b}$ 不平行, 向量 $\lambda \vec{a}+\vec{b}$ 与 $\vec{a}+2 \vec{b}$ 平行, 则实数 $\lambda=(\quad)$.
+
+已有解题过程:
+设 $\vec{a}=(a_1,a_2), \vec{b}=(b_1,b_2)$，则 $\lambda \vec{a}+\vec{b}=(\lambda a_1+b_1,\lambda a_2+b_2)$，$\vec{a}+2\vec{b}=(a_1+2b_1,a_2+2b_2)$。
+
+由题意可得，$\lambda \vec{a}+\vec{b}$ 与 $\vec{a}+2 \vec{b}$ 平行，即它们的方向向量成比例，即：
+$$\frac{\lambda a_1+b_1}{a_1+2b_1}=\frac{\lambda a_2+b_2}{a_2+2b_2}$$
+又因为 $\vec{a}, \vec{b}$ 不平行，所以 $a_1b_2-a_2b_1
+eq 0$，即 $\vec{a}$ 与 $\vec{b}$ 线性无关。因此，上式可以化简为：
+$$\frac{\lambda a_1+b_1}{a_1+2b_1}=\frac{\lambda a_2+b_2}{a_2+2b_2}=\frac{\lambda \vec{a}+\vec{b}}{\vec{a}+2\vec{b}}$$
+$$\Rightarrow \frac{\lambda a_1+b_1}{a_1+2b_1}=\frac{\lambda a_2+b_2}{a_2+2b_2}=\frac{\lambda+1}{2}$$
+解得 $\lambda=-\frac{1}{3}$，故答案为 $-\frac{1}{3}$。 答案是：$-\frac{1}{3}$
+
+检验:
+Action: think("向量 $\vec{a}, \vec{b}$ 不平行, 向量 $\lambda \vec{a}+\vec{b}$ 与 $\vec{a}+2 \vec{b}$ 平行")
+Output: \lambda \vec{a}+\vec{b}=t(\vec{a}+2 \vec{b})=t \vec{a}+2 t \vec{b}
+Action: solve_multi_eq(["\lambda = t", "1 = 2 t"])
+Output: {"\lambda": ["\lambda = \frac{ 1 } { 2 }"], "t": ["t = \frac { 1 } { 2 }"]}
+Final Answer: \frac{1}{2}
+
+正确解题过程:
+//
+$\because$ 向量 $\vec{a}, \vec{b}$ 不平行, 向量 $\lambda \vec{a}+\vec{b}$ 与 $\vec{a}+2 \vec{b}$ 平行, $\therefore \lambda \vec{a}+\vec{b}=t(\vec{a}+2 \vec{b})=t \vec{a}+2 t \vec{b}$, $\therefore\left\{\begin{array}{c}\lambda=t \\ 1=2 t,\end{array}\right.$ 解得实数 $\lambda=\frac{1}{2}$. 答案是: $\frac{1}{2}$.

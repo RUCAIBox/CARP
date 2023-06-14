@@ -1,0 +1,111 @@
+Question: How many $3$-digit squares are palindromes?
+Trial: The possible units digits of a perfect square are 0 ($0^2$), 1 ($1^2$, $9^2$), 4 ($2^2$, $8^2$), 9 ($3^2$, $7^2$), 6 ($4^2$, $6^2$), and 5 ($5^2$). A palindrome square must have a palindromic tens digit, which means it must be one of $1, 2, 3, 4, 5, 6, 7, 8, 9$. Checking each of these digits, we find that the only palindromic squares are $121$, $484$, and $676$. Therefore, there are $\boxed{3}$ palindromic squares. The answer is: 3.
+//
+Action: think("The last digit of a square must be either $1$, $4$, $5$, $6$, or $9$")
+//
+Output: Therefore, we only need to consider these squares. 
+//
+Action: think("Only one square begins and ends with $1: 121$")
+//
+Output: $1: 121$
+//
+Action: think("One square begins and ends with $4: 484$")
+//
+Output: $4: 484$
+//
+Action: think("No square begins and ends with $5$")
+//
+Output: Skip $5$
+//
+Action: think("One square begins and ends with $6: 676$")
+//
+Output: $6: 676$
+//
+Action: think("No square begins and ends with $9$")
+//
+Output: Skip $9$
+//
+Action: think("Therefore, there are $3$ squares which are $3$-digit palindromes")
+//
+Output: 3
+//
+Final Answer: 3
+===
+Question: By what common fraction does $0.\overline{81}$ exceed $0.81$?
+Trial: Let $x = 0.\overline{81}$ and $y = 0.81$. Then $10x = 8.\overline{1}$ and $100y = 81$. Subtracting the two equations gives $10x - 100y = 8.\overline{1} - 81 = -72.\overline{9}$. Simplifying, we get $10x - 100y = -\frac{729}{10}$. Solving for $x-y$, we get $x-y = \frac{729}{1000}$. Therefore, $0.\overline{81}$ exceeds $0.81$ by $\boxed{\frac{729}{1000}}$. The answer is: \frac{729}{1000}.
+//
+Action: think("Let $x=0.\overline{81}$")
+//
+Output: $100x=81.\overline{81}$
+//
+Action: solve_eq("100x - x = 81")
+//
+Output: ["x = \frac { 9 } { 11 }"]
+//
+Action: think("0.81 equals to \frac{81}{100}")
+//
+Output: \frac{81}{100}
+//
+Action: calculate("\frac{9}{11} - \frac{81}{100}")
+//
+Output: \frac { 9 } { 1100 }
+//
+Final Answer: \frac{9}{1100}
+===
+Question: What is the remainder when $2001 \cdot 2002 \cdot 2003 \cdot 2004 \cdot 2005$ is divided by 19?
+Trial: We can use the fact that $a \equiv b \pmod{m}$ implies $ac \equiv bc \pmod{m}$ to simplify the expression. We have \begin{align*}
+2001 \cdot 2002 \cdot 2003 \cdot 2004 \cdot 2005 &\equiv (-18) \cdot (-17) \cdot (-16) \cdot (-15) \cdot (-14) \\
+&\equiv 18 \cdot 17 \cdot 16 \cdot 15 \cdot 14 \\
+&\equiv (-1) \cdot (-2) \cdot (-3) \cdot (-4) \cdot (-5) \\
+&\equiv 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 \\
+&\equiv \boxed{1} \pmod{19}.
+\end{align*} The answer is: 1
+//
+Action: calculate("(2001 \cdot 2002 \cdot 2003 \cdot 2004 \cdot 2005) \mod 19")
+//
+Output: 11
+//
+Final Answer: 11
+===
+Question: How many positive two-digit integers have an odd number of positive factors?
+Trial: A positive integer has an odd number of positive factors if and only if it is a perfect square. The perfect squares between 10 and 99 are $16, 25, 36, 49, 64, 81$. Thus, there are $\boxed{6}$ two-digit integers with an odd number of positive factors. The answer is: 6
+//
+Action: think("Only square numbers have an odd number of factors")
+//
+Output: The two-digit squares are 16, 25, 36, 49, 64 and 81
+//
+Final Answer: 6
+===
+Question: Let $T = \{9^k : k ~ \mbox{is an integer}, 0 \le k \le 4000\}$. Given that $9^{4000}$ has 3817 digits and that its first (leftmost) digit is 9, how many elements of $T$ have 9 as their leftmost digit?
+Trial: Note that $9^n$ has the same number of digits as $9^{n-1}$ if and only if $9^{n-1}$ has a leading digit of 9. Therefore, there are $4000-3817=182$ numbers with leading digit 9 among the set $\{9^1,9^2,\ldots,9^{3999}\}$. However, $9^0$ also starts with 9, so the answer is $182+1=\boxed{183}$. The answer is: 183
+//
+Action: think("$9^{4000}$ has 3816 digits more than $9^1$")
+//
+Output: 4000 - 3816
+//
+Action: calculate("4000 - 3816")
+//
+Output: 184
+//
+Final Answer: 184
+===
+Question: What integer $n$ satisfies $0\le n<19$ and $$38574\equiv n\pmod{19}~?$$
+Trial: We can use the fact that $1001\equiv0\pmod{19}$ to simplify the given congruence: \begin{align*}
+38574&\equiv 38\cdot1001+536\pmod{19} \\
+&\equiv 38\cdot0+536\pmod{19} \\
+&\equiv 536\pmod{19}.
+\end{align*}Since $536=28\cdot19+4$, we have $536\equiv 4\pmod{19}$.  Therefore, the integer $n$ we seek is $n=\boxed{4}$. The answer is: 4
+//
+Action: think("We can calculate $38574 \mod 19$ to get $38574\equiv n\pmod{19}~?$")
+//
+Output: 38574 \mod 19
+//
+Action: calculate("38574 \mod 19")
+//
+Output: 4
+//
+Action: think("$4 \ge 0$ and $4 < 19$")
+//
+Outptu: n = 4
+//
+Final Answer: 4

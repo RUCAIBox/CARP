@@ -1,0 +1,118 @@
+Question: In a single-elimination tournament, each game is between two players. Only the winner of each game advances to the next round. In a particular such tournament there are 256 players. How many individual games must be played to determine the champion?
+Trial: Since there are 256 players, there must be $2^8$ players in the round before the championship. Thus, there must be $2^8-1$ games played in the round before the championship. Similarly, there must be $2^7-1$ games played in the round before that, and so on, down to the first round, which requires $2^0-1=0$ games. Thus, the total number of games played is $$2^8-1+2^7-1+\cdots+2^0-1=\sum_{i=0}^8 2^i-9=\boxed{511}.$$ The answer is: 511
+//
+Action: think("A total of 255 players must be eliminated to determine the champion, and one player is eliminated after each game")
+//
+Output: So 255 games must be played
+//
+Final Answer: 255
+===
+Question: James has 7 apples. 4 of them are red, and 3 of them are green. If he chooses 2 apples at random, what is the probability that both the apples he chooses are green?
+Trial: There are $\binom{7}{2}=21$ ways for James to choose 2 apples out of 7. There are $\binom{3}{2}=3$ ways for James to choose 2 green apples out of the 3 green apples. Therefore, the probability that both apples he chooses are green is $\dfrac{3}{21}=\boxed{\dfrac{1}{7}}$. The answer is: \dfrac{1}{7}
+//
+Action: think("James chooses 2 apples from 7")
+//
+Output: There are $\binom{7}{2}$ total ways
+//
+Action: calculate("\binom{7}{2}")
+//
+Output: 21
+//
+Action: think("James chooses 2 green apples")
+//
+Output: There are $\binom{3}{2}=3$ ways
+//
+Action: calculate("\binom{3}{2}")
+//
+Output: 3
+//
+Action: calculate("3/21")
+//
+Output: \frac { 1 } { 7 }
+//
+Final Answer: \frac{1}{7}
+===
+Question: The three-digit positive integer $N$ has a ones digit of 3. What is the probability that $N$ is divisible by 3? Express your answer as a common fraction.
+Trial: A number is divisible by 3 if and only if the sum of its digits is divisible by 3. Since we know that the ones digit of $N$ is 3, we only need to consider the hundreds and tens digits. There are 10 choices for each of these digits, and we can choose them independently, so there are $10 \cdot 10 = 100$ possible values of $N$. Of these, the hundreds digit can be any of the digits 1 through 9, so there are 9 possible choices for the hundreds digit. For each choice of the hundreds digit, there are 3 possible choices for the tens digit (namely, 0, 3, or 6) that will make the sum of the digits a multiple of 3. Therefore, there are $9 \cdot 3 = 27$ values of $N$ that are divisible by 3. The probability that a randomly chosen three-digit integer with a ones digit of 3 is divisible by 3 is therefore $\boxed{\frac{27}{100}}$. The answer is: \frac{27}{100}
+//
+Action: think("Let $N = xy3$, where $x,y$ are digits")
+//
+Output: $N$ is divisible by 3 if and only if the number $xy$ is
+//
+Action: think("$\frac{1}{3}$ of the two-digit integers are divisible by 3")
+//
+Output: Our final probability is $\frac{1}{3}$
+//
+Final Answer: \frac{1}{3}
+===
+Question: Calculate $\frac{3 \cdot 5! + 15\cdot 4!}{6!}$
+Trial: We can simplify the numerator by factoring out $3\cdot 4!$:
+
+\begin{align*}
+3 \cdot 5! + 15\cdot 4! &= 3 \cdot 4! \cdot 5 + 15 \cdot 4! \\
+&= 3 \cdot 4! \cdot 5 + 3 \cdot 4! \cdot 5 \\
+&= 6 \cdot 4! \cdot 5 \\
+&= 6! \\
+\end{align*}
+
+Therefore, $\frac{3 \cdot 5! + 15\cdot 4!}{6!} = \frac{6!}{6!} = \boxed{1}$. The answer is: 1.
+//
+Action: calculate("\frac{3 \cdot 5! + 15\cdot 4!}{6!}")
+//
+Output: 1
+//
+Final Answer: 1
+===
+Question: If I have a $4\times 4$ chess board, in how many ways can I place four distinct pawns on the board such that each column and row of the board contains no more than one pawn?
+Trial: There are 16 choices for the first pawn, 12 choices for the second pawn (since it cannot be in the same row or column as the first), 9 choices for the third pawn, and 6 choices for the fourth pawn. However, we have overcounted since the order in which we place the pawns does not matter. Specifically, we have counted each arrangement 4! = 24 times. Therefore, the total number of arrangements is $\dfrac{16 \cdot 12 \cdot 9 \cdot 6}{4!} = \boxed{216}$. The answer is: 216
+//
+Action: think("Our chess board is $4 \times 4$")
+//
+Output: There must be exactly one pawn in each column and each row
+//
+Action: think("Consider the ways to place one pawn in each row")
+//
+Output: In the first row, there are four potential spots for a pawn
+//
+Action: think("However, no matter where we place the pawn, it takes up one column")
+//
+Output: In the second row, there are only three potential spots for a pawn
+//
+Action: think("Similarly, there are two spots in the third row and only one in the fourth")
+//
+Output: there are $4\cdot 3 \cdot 2 \cdot 1$ ways in which we can place the pawns
+//
+Action: calculate("4\cdot 3 \cdot 2 \cdot 1")
+//
+Output: 24
+//
+Action: think("Because each pawn is distinct, we have four possible pawns to place in the first slot, three in the second, two in the fourth, and one in the last")
+//
+Output: So there are $24$ possible orderings of the pawns
+//
+Action: calculate("24^2")
+//
+Output: 576
+//
+Final Answer: 576
+===
+Question: Tom has a red marble, a green marble, a blue marble, and three identical yellow marbles. How many different groups of two marbles can Tom choose?
+Trial: Tom can choose 2 marbles out of 5 distinct marbles in $\binom{5}{2}=\boxed{10}$ ways. The answer is: 10
+//
+Action: think("There are two cases here")
+//
+Output: either Tom chooses two yellow marbles (1 result), or he chooses two marbles of different colors ($\binom{4}{2}$ results)
+//
+Action: calculate("\binom{4}{2}")
+//
+Output: 6
+//
+Action: think("The total number of distinct pairs of marbles Tom can choose is $1+6$")
+//
+Output: 1+6
+//
+Action: calculate("1 + 6")
+//
+Output: 7
+//
+Final Answer: 7

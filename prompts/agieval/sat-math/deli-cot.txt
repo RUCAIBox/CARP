@@ -1,0 +1,92 @@
+Question:
+$$(x-6)^{2}+(y+5)^{2}=16$$In the $x y$-plane, the graph of the equation above is a circle. Point $P$ is on the circle and has coordinates $(10,-5)$. If $\\overline{P Q}$ is a diameter of the circle, what are the coordinates of point $Q$ ?\nChoose from the following options:   (A)$(2,-5)$ (B)$(6,-1)$ (C)$(6,-5)$ (D)$(6,-9)$
+
+Given Solution:
+Since $\\overline{P Q}$ is a diameter of the circle, the midpoint of $\\overline{P Q}$ is the center of the circle. The midpoint of $\\overline{P Q}$ is $\\left(\\frac{10+6}{2},\\frac{-5-5}{2}\\right)=(8,-5)$. Therefore, the center of the circle is $(8,-5)$. Since the radius of the circle is $\\sqrt{16}=4$, any point on the circle is 4 units away from the center. To find the coordinates of $Q$, we can move 4 units to the left from the center to get $(8-4,-5)=(4,-5)$. Therefore, the coordinates of $Q$ are $\\boxed{\\textbf{(A) } (2,-5)}$.
+
+Verification:
+Action: think("The standard form for the equation of a circle is $(x-h)^{2}+(y-k)^{2}=r^{2}$, where $(h, k)$ are the coordinates of the center and $r$ is the length of the radius")
+Output: According to the given equation, the center of the circle is $(6,-5)$. Let $\left(x_{1}, y_{1}\right)$ represent the coordinates of point $Q$. 
+Action: think("Point $P(10,-5)$ and point $Q\left(x_{1}, y_{1}\right)$ are the endpoints of a diameter of the circle")
+Output: The center $(6,-5)$ lies on the diameter, halfway between $P$ and $Q$. Therefore, the following relationships hold: $\frac{x_{1}+10}{2}=6$ and $\frac{y_{1}+(-5)}{2}=-5$. 
+Action: solve_multi_eq(["\frac{x+10}{2}=6", "\frac{y+(-5)}{2}=-5"])
+Output: {"x": ["x = 2"], "y": ["y = - 5"]}
+Final Answer: A
+
+Revise the given solution based on the verification process:
+//
+The standard form for the equation of a circle is $(x-h)^{2}+(y-k)^{2}=r^{2}$, where $(h, k)$ are the coordinates of the center and $r$ is the length of the radius. According to the given equation, the center of the circle is $(6,-5)$. Let $\\left(x_{1}, y_{1}\\right)$ represent the coordinates of point $Q$. Since point $P(10,-5)$ and point $Q\\left(x_{1}, y_{1}\\right)$ are the endpoints of a diameter of the circle, the center $(6,-5)$ lies on the diameter, halfway between $P$ and $Q$. Therefore, the following relationships hold: $\\frac{x_{1}+10}{2}=6$ and $\\frac{y_{1}+(-5)}{2}=-5$. Solving the equations for $x_{1}$ and $y_{1}$, respectively, yields $x_{1}=2$ and $y_{1}=-5$. Therefore, the coordinates of point $Q$ are $(2,-5)$.Alternate approach: Since point $P(10,-5)$ on the circle and the center of the circle $(6,-5)$ have the same $y$-coordinate, it follows that the radius of the circle is $10-6=4$. In addition, the opposite end of the diameter $\\overline{P Q}$ must have the same $y$-coordinate as $P$ and be 4 units away from the center. Hence, the coordinates of point $Q$ must be $(2,-5)$.Choices $\\mathrm{B}$ and $\\mathrm{D}$ are incorrect because the points given in these choices lie on a diameter that is perpendicular to the diameter $\\overline{P Q}$. If either of these points were point $Q$, then $\\overline{P Q}$ would not be the diameter of the circle. Choice $C$ is incorrect because $(6,-5)$ is the center of the circle and does not lie on the circle. The answer is: A
+===
+Question:
+Two units of length used in ancient Egypt were cubits and palms, where 1 cubit is equivalent to 7 palms. The Great Sphinx statue in Giza is approximately 140 cubits long. Which of the following best approximates the length, in palms, of the Great Sphinx statue? (A)0.05 (B)20 (C)140 (D)980
+
+Given Solution:
+Since 1 cubit is equivalent to 7 palms, the length of the Great Sphinx statue in palms is $140 \\text{ cubits} \\times 7 \\text{ palms/cubit} = 980$ palms. Therefore, the best approximation for the length of the Great Sphinx statue in palms is $\\boxed{\\textbf{(D) }980}$.
+
+Verification:
+Action: calculate("140 * 7")
+Output: 980
+Final Answer: D
+
+Revise the given solution based on the verification process:
+//
+Since 1 cubit is equivalent to 7 palms, 140 cubits are equivalent to 140 (7) palms, or 980 palms.Choice $A$ is incorrect and may result from dividing 7 by 140. Choice $B$ is incorrect and may result from dividing 140 by 7 . Choice $\\mathrm{C}$ is incorrect. This is the length of the Great Sphinx statue in cubits, not palms. The answer is: D
+===
+Question:
+In the 1908 Olympic Games, the Olympic marathon was lengthened from 40 kilometers to approximately 42 kilometers. Of the following, which is closest to the increase in the distance of the Olympic marathon, in miles? ( 1 mile is approximately 1.6 kilometers ) (A)1.00 (B)1.25 (C)1.50 (D)1.75
+
+Given Solution:
+The increase in distance is approximately $42-40=2$ kilometers. Converting to miles, we have $2/1.6=1.25$ miles. Therefore, the answer is $\\boxed{\\textbf{(B)}\\ 1.25}$.
+
+Verification:
+Action: calculate("2 / 1.6")
+Output: 1.25
+Final Answer: B
+
+Revise the given solution based on the verification process:
+//
+In 1908, the marathon was lengthened by $42-40=2$ kilometers. Since 1 mile is approximately 1.6 kilometers, the increase of 2 kilometers can be converted to miles by multiplying as shown: 2 kilometers $\\times \\frac{1 \\text { mile }}{1.6 \\text { kilometers }}=1.25$ miles .Choices $A, C$, and $D$ are incorrect and may result from errors made when applying the conversion rate or other computational errors. The answer is: B
+===
+Question:
+The expression $\frac{x^{-2} y^{\frac{1}{2}}}{x^{\frac{1}{3}} y^{-1}}$, where $x>1$ and $y>1$, is equivalent to which of the following? (A)$\frac{\sqrt{y}}{\sqrt[3]{x^{2}}}$ (B)$\frac{y \sqrt{y}}{\sqrt[3]{x^{2}}}$ (C)$\frac{y \sqrt{y}}{x \sqrt{x}}$ (D)$\frac{y \sqrt{y}}{x^{2} \sqrt[3]{x}}$
+
+Given Solution:
+Using the laws of exponents, we can simplify the expression as follows: $$\frac{x^{-2} y^{\frac{1}{2}}}{x^{\frac{1}{3}} y^{-1}}=x^{-2-\frac{1}{3}} y^{\frac{1}{2}+1}=x^{-\frac{7}{3}} y^{\frac{3}{2}}$$ Now, we can rewrite this expression using only positive exponents: $$x^{-\frac{7}{3}} y^{\frac{3}{2}}=\frac{y^{\frac{1}{2}}}{x^{\frac{7}{3}}}=\frac{\sqrt{y}}{\sqrt[3]{x^{7}}}$$ Therefore, the answer is $\boxed{\textbf{(A) }\frac{\sqrt{y}}{\sqrt[3]{x^{2}}}}$.
+
+Verification:
+Action: is_equal("\frac{x^{-2} y^{\frac{1}{2}}}{x^{\frac{1}{3}} y^{-1}}", "\frac{\sqrt{y}}{\sqrt[3]{x^{2}}}")
+Output: False
+Action: is_equal("\frac{x^{-2} y^{\frac{1}{2}}}{x^{\frac{1}{3}} y^{-1}}", "\frac{y \sqrt{y}}{\sqrt[3]{x^{2}}}")
+Output: False
+Action: is_equal("\frac{x^{-2} y^{\frac{1}{2}}}{x^{\frac{1}{3}} y^{-1}}", "\frac{y \sqrt{y}}{x \sqrt{x}}")
+Output: False
+Action: is_equal("\frac{x^{-2} y^{\frac{1}{2}}}{x^{\frac{1}{3}} y^{-1}}", "\frac{y \sqrt{y}}{x^{2} \sqrt[3]{x}}")
+Output: True
+Final Answer: D
+
+Revise the given solution based on the verification process:
+//
+For $x>1$ and $y>1, x^{\\frac{1}{3}}$ and $y^{\\frac{1}{2}}$ are equivalent to $\\sqrt[3]{x}$ and $\\sqrt{y}$, respectively. Also, $x^{-2}$ and $y^{-1}$ are equivalent to $\\frac{1}{x^{2}}$ and $\\frac{1}{y}$, respectively. Using these equivalences, the given expression can be rewritten as $\\frac{y \\sqrt{y}}{x^{2} \\sqrt[3]{x}}$.Choices $A, B$, and $C$ are incorrect because these choices are not equivalent to the given expression for $x>1$ and $y>1$.For example, for $x=2$ and $y=2$, the value of the given expression is $2^{-\\frac{5}{6}}$; the values of the choices, however, are $2^{-\\frac{1}{3}}, 2^{\\frac{5}{6}}$, and 1, respectively. The answer is: D
+===
+Question:
+Which of the following is an example of a function whose graph in the $x y$-plane has no $x$-intercepts? (A)A linear function whose rate of change is not zero (B)A quadratic function with real zeros (C)A quadratic function with no real zeros (D)A cubic polynomial with at least one real zero
+
+Given Solution:
+For a function to have an $x$-intercept, the $y$-value must be zero at some point. Therefore, to have no $x$-intercepts, the function must never equal zero. Choice $A$ is incorrect because a linear function with a nonzero rate of change will eventually cross the $x$-axis. Choice $B$ is incorrect because a quadratic function with real zeros will have $x$-intercepts. Choice $C$ is correct because a quadratic function with no real zeros will never cross the $x$-axis. Choice $D$ is incorrect because a cubic polynomial with at least one real zero will have an $x$-intercept. The answer is: C.
+
+Verification:
+Action: think("If $f$ is a function of $x$")
+Output: Then the graph of $f$ in the $x y$-plane consists of all points $(x, f(x))$.
+Action: think("An $x$-intercept is where the graph intersects the $x$-axis; since all points on the $x$-axis have $y$-coordinate 0 , the graph of $f$ will cross the $x$-axis at values of $x$ such that $f(x)=0$")
+Output: Therefore, the graph of a function $f$ will have no $x$-intercepts if and only if $f$ has no real zeros
+Action: think("Likewise, the graph of a quadratic function with no real zeros will have no $x$-intercepts")
+Output: Choice $A$ is incorrect
+Action: think("The graph of a linear function in the $x y$-plane whose rate of change is not zero is a line with a nonzero slope")
+Output: The $x$-axis is a horizontal line and thus has slope 0 , so the graph of the linear function whose rate of change is not zero is a line that is not parallel to the $x$-axis. 
+Action: think("The graph must intersect the $x$-axis at some point, and this point is an $x$-intercept of the graph")
+Output: The graph of any function with a real zero must have an $x$-intercept, so Choices $B$ and $D$ are incorrect
+Final Answer: C
+
+Revise the given solution based on the verification process:
+//
+Which of the following is an example of a function whose graph in the $x y$-plane has no $x$-intercepts?\nChoose from the following options:   (A)A linear function whose rate of change is not zero (B)A quadratic function with real zeros (C)A quadratic function with no real zeros (D)A cubic polynomial with at least one real zero", "steps": "If $f$ is a function of $x$, then the graph of $f$ in the $x y$-plane consists of all points $(x, f(x))$. An $x$-intercept is where the graph intersects the $x$-axis; since all points on the $x$-axis have $y$-coordinate 0 , the graph of $f$ will cross the $x$-axis at values of $x$ such that $f(x)=0$. Therefore, the graph of a function $f$ will have no $x$-intercepts if and only if $f$ has no real zeros. Likewise, the graph of a quadratic function with no real zeros will have no $x$-intercepts.Choice $A$ is incorrect. The graph of a linear function in the $x y$-plane whose rate of change is not zero is a line with a nonzero slope. The $x$-axis is a horizontal line and thus has slope 0 , so the graph of the linear function whose rate of change is not zero is a line that is not parallel to the $x$-axis. Thus, the graph must intersect the $x$-axis at some point, and this point is an $x$-intercept of the graph. Choices $B$ and $D$ are incorrect because the graph of any function with a real zero must have an $x$-intercept. The answer is: C

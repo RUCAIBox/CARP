@@ -1,0 +1,10 @@
+Question:
+{question}
+
+Given Solution:
+{old_scratchpad}
+
+Verification:
+{scratchpad}
+
+Revise the given solution based on the verification process:

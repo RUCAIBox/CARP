@@ -1,0 +1,98 @@
+Question: A company that sells widgets has to pay $\$500$ in maintenance fees each day and then it pays each worker $\$15$ per hour. Each worker makes 5 widgets per hour, which are sold at $\$3.10$ each. What is the least number of workers the company has to hire in order to make a profit in an 8-hour workday?
+Trial: Let $w$ be the number of workers hired. In an 8-hour workday, each worker makes $8\cdot 15 = 120$ dollars. Each worker also makes $5\cdot 3.10 = 15.50$ dollars worth of widgets per hour, or $8\cdot 15.50 = 124$ dollars worth of widgets in an 8-hour workday. Thus, the company makes $124w - 500$ dollars in an 8-hour workday. In order to make a profit, we need \begin{align*}
+124w - 500 &> 0 \\
+\Rightarrow\qquad 124w &> 500 \\
+\Rightarrow\qquad w &> \frac{500}{124} \\
+\Rightarrow\qquad w &> 4.03226\ldots.
+\end{align*}The smallest integer $w$ that satisfies this inequality is $\boxed{5}$. Therefore, the company must hire at least 5 workers to make a profit in an 8-hour workday. The answer is: 5
+//
+Action: think("We look for the least number of workers $n$ such that the cost is less than the revenue in a day of work")
+//
+Output: The cost of each worker is $\$15$ per hour, while the revenue that comes from each worker hired is $\$3.10\times5$ widgets per hour
+//
+Action: solve_ineq("500+8(15n)<(8)(3.1)(5)n")
+//
+Output: n > 125
+//
+Action: think("The smallest integer greater than 125 is 126")
+//
+Output: The company has to hire at least 126 workers to make a profit
+//
+Final Answer: 126
+===
+Question: How many numbers are in the list $ 4, 6, 8, \ldots, 128, 130 ?$
+Trial: We can divide each number by 2 to get $2,3,4,\ldots,64,65$. So there are $65-2+1=\boxed{64}$ numbers in the list. The answer is: 64
+//
+Action: think("Dividing each member of the list by 2")
+//
+Output: We get $2,3,4,\ldots,64,65$
+//
+Action: think("Subtracting each member of the list by 1")
+//
+Output: We get $1,2,3,\ldots,63,64$
+//
+Action: think("There are 64 numbers in the list")
+//
+Output: 64
+//
+Final Answer: 64
+===
+Question: If $x - 2x + 3x = 100$, what is the value of $x$?
+Trial: Combining the like terms on the left side of the equation gives $2x=100$. Dividing both sides by 2 yields $x=\boxed{50}$. The answer is: 50
+//
+Action: solve_eq("x - 2x + 3x = 100")
+//
+Output: ["x = 50"]
+//
+Final Answer: 50
+===
+Question: What is the arithmetic mean of the integers from -4 through 5, inclusive? Express your answer as a decimal to the nearest tenth.
+Trial: The sum of an arithmetic series is equal to the average of the first and last term, multiplied by the number of terms. In this case, the sum of the integers from $-4$ to 5 is $(5-(-4)+1)(-4+5)/2 = 6$. There are 10 integers in the list, so the mean is $6/10 = \boxed{0.6}$. The answer is: 0.6
+//
+Action: think("There are 10 integers between $-4$ and 5 inclusive")
+//
+Output: The sum of these integers is 5
+//
+Action: think("The sum of the integers between $-4$ and 4 is zero")
+//
+Output: The mean is $5/10$
+//
+Action: calculate("5/10")
+//
+Output: \frac { 1 } { 2 }
+//
+Final Answer: \frac{1}{2}
+===
+Question: What is the cube of the square of the second smallest prime number?
+Trial: The second smallest prime number is 3. The square of 3 is 9, and the cube of 9 is $9^3=729$. Therefore, the cube of the square of the second smallest prime number is $\boxed{729}$. The answer is: 729.
+//
+Action: think("The second smallest prime number is 3 (preceded by 2)")
+//
+Output: The cube of the square of the second smallest prime number is $(3^2)^3$
+//
+Action: calculate("(3^2)^3")
+//
+Output: 729
+//
+Final Answer: 729
+===
+Question: In Mrs. Marsh's algebra class, 30 of the 36 students took the Chapter 4 test, and their mean score was $72 \%$. The next day the other six students took the test and their mean score was $78 \%$. What is the new class mean? Express your answer as a percent.
+Trial: The sum of the scores of the first 30 students is $30\times72=2160$. The sum of the scores of the next 6 students is $6\times78=468$. The sum of the scores of all 36 students is $2160+468=2628$. The mean score of all 36 students is $$\frac{2628}{36}=\frac{876}{12}=73\%\cdot$$ Therefore, the new class mean is $\boxed{73\%}$. The answer is: 73\%
+//
+Action: think("To make this easier, you can scale all the student numbers down by a factor of 36:30 students")
+//
+Output: There are 5 students averaged a $72\%$, and 1 student got a $78\%$
+//
+Action: think("The class average should be 5 times closer to 72 than 78")
+//
+Output: 78 - 72
+//
+Action: calculate("78 - 72")
+//
+Output: 6
+//
+Action: think("Since $73 - 72 = 1$, and $78 - 73 = 5$")
+//
+Output: We get $73\%$ as the class average
+//
+Final Answer: 73\%

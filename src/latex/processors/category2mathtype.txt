@@ -1,0 +1,59 @@
+# category2mathtype
+# =================
+#
+# Map `Unicode category codes`__ to `TeX math types`__
+# This file uses Python `ConfigParser`__ syntax.
+# 
+# __ http://www.dpawson.co.uk/xsl/rev2/UnicodeCategories.html
+# __ http://mirror.ctan.org/macros/latex/doc/fntguide.pdf.
+# __ http://docs.python.org/library/configparser.html
+# 
+# The <type> in ``\DeclareMathSymbol`` can be given as a number or as a
+# command:
+# 
+# ==================  =================   =============
+# Type                Meaning             Example
+# ==================  =================   =============
+# 0 or ``\mathord``   Ordinary            ``$\exists$``
+# 1 or ``\mathop``    Large operator      ``$\sum$``
+# 2 or ``\mathbin``   Binary operation    ``$\times$``
+# 3 or ``\mathrel``   Relation            ``$\leq$``
+# 4 or ``\mathopen``  Opening             ``$\langle$``
+# 5 or ``\mathclose`` Closing             ``$\rangle$``
+# 6 or ``\mathpunct`` Punctuation         ``#``
+# 7 or ``\mathalpha`` Alphabet character  ``A``
+# ==================  =================   =============
+#
+# If there is no mapping, the option is commented out.
+
+[mathtypes]
+# Cc:          ; Other, control
+# Cf:          ; Other, format
+# Cn:          ; Other, not assigned
+# Co:          ; Other, private use
+# Cs:          ; Other, surrogate
+Ll: mathalpha  ; Letter, lowercase
+Lm: mathalpha  ; Letter, modifier
+Lo: mathalpha  ; Letter, other
+Lt: mathalpha  ; Letter, titlecase
+Lu: mathalpha  ; Letter, uppercase
+Mc: mathaccent ; Mark, spacing combining
+Me: mathaccent ; Mark, enclosing
+Mn: mathaccent ; Mark, non-spacing
+Nd: mathord    ; Number, decimal digit
+Nl: mathord    ; Number, letter
+No: mathord    ; Number other
+Pc: mathord    ; Punctuation, connector
+Pd: mathord    ; Punctuation, dash
+Pe: mathclose  ; Punctuation, close
+Pf: mathclose  ; Punctuation, final quote
+Pi: mathopen   ; Puntuation, initial quote
+# Po: [mathord, mathpunct] ; Punctuation, other
+Ps: mathopen   ; Punctuation, open
+Sc: mathord    ; Symbol, currency
+Sk: mathord    ; Symbol, modifier
+Sm: mathord    ; Symbol, math
+So: mathord    ; Symbol, other
+# Zl:          ; Separator, line
+# Zp:          ; Sepaarator, paragraph
+# Zs:          ; Separator, space

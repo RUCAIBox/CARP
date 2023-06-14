@@ -1,0 +1,305 @@
+\!	 
+\,	 
+\:	 
+\>	 
+\;	 
+\\	\
+\A	A
+\Alpha	\Alpha
+\And	And
+\B	B
+\Beta	\Beta
+\C	C
+\Chi	\chi
+\D	D
+\DO	DO
+\DeltaABC	\Delta ABC
+\DeltaABO	\Delta ABO
+\DeltaBCD	\Delta BCD
+\DeltaMNP	\Delta MNP
+\DeltaPEF	\Delta PEF
+\Deltab	\Delta b
+\Do	Do
+\ELSE	ELSE
+\END	END
+\Else	Else
+\End	End
+\Epsilon	\epsilon
+\Eta	\eta
+\F	F
+\For	For
+\I	I
+\IF	IF
+\If	If
+\Int	\Int
+\IntDecimal	\IntDecimal
+\Iota	\iota
+\K	K
+\Kappa	\kappa
+\LOOP	LOOP
+\Large	\Large
+\Leftarrowcard	\Leftarrow card
+\LeftrightarrowA	\Leftrightarrow A
+\Leftrightarrowcard	\Leftrightarrow card
+\M	M
+\Mu	\mu
+\N	N
+\Nu	\nu
+\PRINT	PRINT
+\Pr	Pr
+\Print	Print
+\Rho	\rho
+\Rightarrowcard	\Rightarrow card
+\S	S
+\T	T
+\Tau	\tau
+\Until	Until
+\Vert	\VERT
+\WEND	WEND
+\WHILE	WHILE
+\While	While
+\X	X
+\Y	Y
+\Zeta	\zeta
+\a	a
+\ab	ab
+\acute	\acute
+\ae	ae
+\alnx	a \ln x
+\alphacos	\alpha cos
+\alphatan	\alpha tan
+\angleA	\angle A
+\angleB	\angle B
+\angleBAE	\angle BAE
+\angleC	\angle C
+\arccos	\arccos
+\arccot	\arccot
+\arcsin	\arcsin
+\arctan	\arctan
+\arg	arg
+\ax	ax
+\b	b
+\backslash	\backslash
+\backslasha	\backslash a
+\backslashal	\backslash al
+\backslashb	\backslash b
+\backslashco	\backslash co
+\backslashf		\backslash f
+\backslashlc	\backslash lc
+\backslashrc	\backslash rc
+\backslashvs	\backslash vs
+\bar	\bar
+\begin	begin
+\betacos	\beta cos
+\bf	\bf
+\big	\big
+\bigcirc	\bigcirc
+\bigtriangleup	\bigtriangleup
+\blacktriangle	\blacktriangle
+\bmod	\mod
+\boldsymbol	\boldsymbol
+\botAB	\bot AB
+\botAC	\bot AC
+\botC	\bot C
+\botCB	\bot CB
+\botCE	\bot CE
+\botON	\bot ON
+\botPC	\bot PC
+\boxed	\boxed
+\buildrel	\buildrel
+\bx	bx
+\c	c
+\cancel	\cancel
+\capB	\cap B
+\capN	\cap N
+\cdotsa	\cdots a
+\centerdot	\centerdot
+\cm	cm
+\cos	\cos
+\cosA	\cos A
+\cosC	\cos C
+\cosh	\cosh
+\cosx	\cos x
+\cosy	\cos y
+\cot	\cot
+\csc	\csc
+\d	d
+\diagup	\diagup
+\displaystyle	\displaystyle
+\dot	\dot
+\dpi	 		
+\e	e
+\emptyset	\emptyset
+\end	end
+\existsa	\exists a
+\existsm	\exists m
+\existsn	\exists n
+\existsx	\exists x
+\exp	\exp
+\f	f
+\fbox	 
+\foral	\foral
+\forallm	\forall m
+\forallx	\forall x
+\frac	\frac
+\g	g
+\ge	\ge
+\gea	\ge a
+\geqslantb	\geqslant b
+\geqslantf	\geqslant f
+\grave	\grave
+\h	h
+\hat	\hat
+\hbar	\hbar
+\hbox	 
+\hfil	 
+\hfill	l
+\hspace	\hspace
+\i	i
+\inA	\in A
+\inB	\in B
+\inM	\in M
+\inN	\in N
+\inR	\in R
+\k	k
+\kern	\kern
+\kx	kx
+\lambdaDF	\lambda DF
+\lambdac	\lambda c
+\land	\land
+\lbrack	\lbrack
+\le	\le
+\led	\le d
+\left	 
+\leftarrowa	\leftarrow a
+\leftarrowaElse	\leftarrowa Else
+\leftarrowbEnd	\leftarrowb End
+\leftarrowx	\leftarrow x
+\leqslanta	\leqslant a
+\leqslantb	\leqslant b
+\leqslantk	\leqslant k
+\leqslantx	\leqslant x
+\lg	\lg
+\lga	\lg a
+\lgb	\lg b
+\lgx	\lg x
+\lim	\lim
+\limits	\limits
+\llap	\llap
+\ln	\ln
+\lnx	\ln x
+\log	\log
+\lower	\lower
+\m	m
+\mathbb	 
+\mathbf	 
+\mathcal	 
+\mathchar	 
+\mathop	 
+\mathord	 
+\mathrm	 
+\mathsf	 
+\max	\max
+\mb	mb
+\middle	 
+\min	\min
+\mkern	\mkern
+\mspace	\mspace
+\mx	mx
+\n	\n
+\ne	\ne
+\neM	\ne M
+\negp	\neg p
+\negq	\neg q
+\neqx	\neq x
+\nolimits	 
+\not	\not
+\notinB	\notin B
+\ny	ny
+\omegax	\omega x
+\operatorname	 
+\over	\over
+\overleftarrow	\overleftarrow
+\overline	\overline
+\overrightarrow	\overrightarrow
+\overset	\overset
+\p	p
+\phantom	 
+\picm	\pi cm
+\pis	\pi s
+\pix	\pi x
+\q	q
+\qquad	 
+\raise	\raise
+\rbrack	\rbrack
+\rbrackcosx	\rbrack \cos x
+\rbrackf	\rbrack f
+\rhocos	\rho \cos
+\rhosin	\rho \sin
+\right	 
+\rlap	\rlap
+\rm	 
+\s	s
+\scriptscriptstyle	 
+\scriptstyle	 
+\sec	\sec
+\sideset	\sideset
+\simN	\sim N
+\sin	\sin
+\sinA	\sin A
+\sinB	\sin B
+\sinC	\sin C
+\sinh	\sin h
+\sinx	\sin x
+\small	 
+\smash	 
+\subseteqA	\subseteq A
+\subseteqB	\subseteq B
+\subseteqN	\subseteq N
+\subseteqQ	\subseteq Q
+\subseteqU	\subseteq U
+\subsetneqqA	\subsetneqq A
+\subsetneqqB	\subsetneqq B
+\subsetneqqC	\subsetneqq C
+\subsetneqqM	\subsetneqq M
+\subsetneqqN	\subsetneqq N
+\subsetneqqP	\subsetneqq P
+\substack	\substack
+\supseteqQ	\supseteq Q
+\surd	\surd
+\t	\t
+\tan	\tan
+\tanh	\tanh
+\te	te
+\text	 
+\textcircled	\textcircled
+\textrm	 
+\textstyle	 
+\tfrac	\frac
+\thickapprox	\thickapprox
+\tilde	\tilde
+\to	\to
+\toy	\to y
+\triangleABC	\triangle ABC
+\trianglePEF	\triangle PEF
+\triangleleft	\triangleleft
+\underline	\underline
+\underrightarrow	\underrightarrow
+\underset	\underset
+\varphicos	\varphi cos
+\varsubsetneq	\varsubsetneq
+\varsubsetneqq	\varsubsetneqq
+\varsupsetneq	\varsupsetneq
+\vartriangle	\vartriangle
+\vec	\vec
+\wedgeq	\wedge q
+\widehat	\widehat
+\widetilde	\widetilde
+\x	x
+\xix	\xi x
+\xleftarrow	\xleftarrow
+\xrightarrow	\xrightarrow
+\xxq	xxq
+\xy	xy
+\y	y
+\z	z

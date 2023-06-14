@@ -1,0 +1,106 @@
+# Packages and superpackages
+
+# section: package or feature
+# entries: packages providing the feature (command(s) of the current
+# 	   section) except the ones listed as argument.
+
+[amsfonts]
+amssymb:
+
+[amsmath]
+kpfonts:
+
+[amssymb]
+mathabx:  \Bbbk \Bumpeq \Diamond \Lleftarrow \Rrightarrow \approxeq 
+	  \backprime \backepsilon \backsim \backsimeq \beth \blacklozenge
+	  \blacksquare \bumpeq \checkmark \circledR \daleth \dasharrow
+	  \dashleftarrow \dashrightarrow \digamma \eqsim \eth \gimel \hslash
+	  \intercal \lhd \leftarrowtail \lozenge \maltese \mathbb
+	  \mathfrak \mho \multimap \nmid \nparallel \rhd
+	  \rightarrowtail \smallsetminus \triangledown \twoheadleftarrow
+	  \twoheadrightarrow \varkappa \varnothing \varpropto
+	  \vartriangle \yen
+	  \lll \ggg ; name clash: print nested triple < and > symbols
+mathdesign: \yen ; prints \check{e} when used in math mode
+MnSymbol: \Bbbk \Finv \Game \backepsilon \digamma \eth \gneq \lneq \mathbb 
+	  \mho \varkappa
+oz: 	  \Bbbk \Finv \Game \dasharrow \dashleftarrow \dashrightarrow
+	  \mathfrak 
+txfonts:  \checkmark \circledR \maltese \yen
+
+[bbold]
+mathbbol:
+
+[esint]
+txfonts:
+
+[eufrak]
+amsfonts:
+
+[fixmath]
+isomath:
+mathpazo:
+tmmath:
+
+[fourier]
+fouriernc:
+
+[mathsfbf]
+omlmathsfbf:
+
+[txfonts]
+kmath:
+kpfonts: \mathcent 
+	 \invamp; mirrored instead of turned
+pxfonts:
+
+[urwchancal]
+wrisym:
+
+# Features
+# ========
+
+# "Virtual packages" implementing either a set of commands
+# common to several packages or a constraint (e.g.
+# ``literal`` mapping plain characters to upright face).
+
+[mathbb]
+# Latin Capital blackboard bold letters
+amsfonts:
+bbold:
+fourier:
+mathpazo:
+
+
+[slantedGreek]
+# slanted capital Greek letters in \mathnormal alphabet (ISO math
+# style)
+fixmath:
+isomath:
+# The following packages provide this feature if loaded with options:
+# kpfonts: slantedGreeks
+# lucimatx: math-style=iso
+# mathdesign: greekuppercase=italicized
+# mathpazo: slantedGreek
+# mathptmx: slantedGreek
+# unicode-math: math-style=ISO
+
+[isostyle]
+# All Greek and Latin letters italic/slanted in ``\mathnormal``.
+slantedGreek:
+
+[frenchstyle]
+# Capital and small Greek letters as well as Capital Latin ones upright
+# with ``\mathnormal``.
+# The following packages provide this feature if loaded with options:
+# fourier:      upright
+# kpfonts:      frenchstyle or upright
+# lucimatx:     math-style=french
+# mathdesign:   uppercase=upright, greeklowercase=upright
+# unicode-math: math-style=french
+
+[uprightstyle]
+eulervm:
+# The following packages provide this feature if loaded with options:
+# lucimatx: math-style=upright
+# unicode-math: math-style=upright

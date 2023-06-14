@@ -1,0 +1,10 @@
+问题:
+{question}
+
+已有解题过程:
+{old_scratchpad}
+
+检验:
+{scratchpad}
+
+正确解题过程:
